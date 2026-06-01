@@ -301,10 +301,7 @@ main.expanded{
         width: 260px;
     }
 
-    .sidebar.open{
-
-        transform: translateX(0);
-    }
+    
 
     main{
 

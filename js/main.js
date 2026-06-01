@@ -12,13 +12,9 @@ if(window.innerWidth <= 576){
 
 toggleBtn.addEventListener("click", () => {
 
-    if(window.matchMedia("(max-width:576px)").matches){
+    sidebar.classList.toggle("collapsed");
 
-        sidebar.classList.toggle("open");
-
-    }else{
-
-        sidebar.classList.toggle("collapsed");
+    if(window.innerWidth > 576){
 
         main.classList.toggle("expanded");
 

@@ -153,7 +153,15 @@ body{
 
 .nav-icon{
     font-size: 1.3rem;
-    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.nav-icon img{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
 
 /* Ocultar texto al colapsar */
@@ -187,3 +195,28 @@ main{
 main.expanded{
     margin-left: 80px;
 }
+
+/* Banner */
+.hero-banner{
+    width: 100%;
+
+    overflow: hidden;
+
+    /*border-radius: 20px;*/
+
+    margin-bottom: 40px;
+}
+
+.hero-banner picture{
+    display: block;
+}
+
+.hero-banner img{
+    width: 100%;
+    height: auto;
+
+    /*object-fit: cover;*/
+
+    display: block;
+}
+

@@ -1,0 +1,48 @@
+:root{
+    --primary: #b83546;
+    --secondary: #cf2b33;
+
+    --accent-orange: #ff751f;
+    --accent-amber: #e89c2a;
+    --accent-yellow: #f9a920;
+
+    /* Fondo principal */
+    --background: #fffedb;
+
+    /* Superficies (cards, modales, etc.) */
+    --surface: #ffffff;
+
+    --text-primary: #222222;
+    --text-secondary: #666666;
+
+    --border: #dcdcdc;
+
+    --bs-warning: #f9a920;
+    --bs-danger: #ff751f;
+}
+
+/* Fondo global */
+body{
+    background-color: var(--background);
+    color: var(--text-primary);
+}
+
+.btn-primary{
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover{
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.btn-secondary{
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.btn-secondary:hover{
+    background-color: var(--primary);
+    border-color: var(--primary);
+}

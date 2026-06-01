@@ -9,3 +9,36 @@ toggleBtn.addEventListener("click", () => {
     main.classList.toggle("expanded");
 
 });
+
+new Swiper(".productsSwiper", {
+
+    loop: true,
+
+    spaceBetween: 30,
+
+    autoplay: {
+        delay: 3000
+    },
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+
+    breakpoints: {
+
+        0: {
+            slidesPerView: 1
+        },
+
+        768: {
+            slidesPerView: 2
+        },
+
+        1200: {
+            slidesPerView: 3
+        }
+
+    }
+
+});

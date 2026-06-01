@@ -1,0 +1,781 @@
+/* Banner */
+.hero-banner{
+    width: 100%;
+
+    overflow: hidden;
+
+    /**/
+
+    margin-bottom: 40px;
+}
+
+.hero-banner picture{
+    display: block;
+}
+
+.hero-banner img{
+    width: 100%;
+    height: auto;
+
+    /*object-fit: cover;*/
+
+    display: block;
+}
+
+/* Welcom */
+.welcome-section{
+    padding: 60px 20px;
+}
+
+.welcome-card{
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 50px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #b83546,
+        #cf2b33,
+        #ff751f
+    );
+
+    color: white;
+
+    border-radius: 25px;
+
+    
+
+    transition: all .3s ease;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome-icon{
+
+    font-size: 3rem;
+
+    margin-bottom: 20px;
+}
+
+.welcome-card h2{
+
+    margin-bottom: 20px;
+
+    font-weight: bold;
+}
+
+.welcome-card p{
+
+    font-size: 1.1rem;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+.welcome-card::before{
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(255,255,255,.15);
+
+    transition: .6s;
+}
+
+.welcome-card:hover::before{
+    left: 100%;
+}
+
+/* Carrusel */
+.products-section{
+    padding: 80px 0;
+}
+
+.section-title{
+    text-align: center;
+
+    color: var(--primary);
+
+    margin-bottom: 40px;
+
+    font-weight: bold;
+}
+
+.product-card{
+    
+
+    
+
+    padding: 30px;
+
+    text-align: center;
+
+    max-width: 500px;
+
+    margin: 0 auto;
+
+    
+}
+
+.product-card img{
+    width: 100%;
+
+    max-width: 250px;
+
+    margin-bottom: 20px;
+}
+
+.product-card h3{
+    color: var(--primary);
+
+    margin-bottom: 15px;
+}
+
+.product-card p{
+    color: var(--text-secondary);
+
+    margin-bottom: 20px;
+}
+
+/* ¿Por qué Tropical Spice? */
+
+.why-section{
+    padding: 80px 0;
+}
+
+.why-card{
+
+    
+
+    padding: 30px;
+
+    
+
+    text-align: center;
+
+    height: 100%;
+
+    
+
+    
+}
+
+.why-icon{
+
+    font-size: 3rem;
+
+    margin-bottom: 20px;
+    transition: .3s;
+}
+
+.why-card:hover .why-icon{
+
+    transform: scale(1.2);
+}
+
+.why-card h4{
+
+    color: var(--primary);
+
+    margin-bottom: 15px;
+}
+
+.why-card p{
+
+    color: var(--text-secondary);
+
+    margin-bottom: 0;
+}
+
+.why-green:hover{
+
+    background: linear-gradient(
+        135deg,
+        #d9f7d9,
+        #a7e8a7
+    );
+
+    border-color: #4caf50;
+}
+
+.why-orange:hover{
+
+    background: linear-gradient(
+        135deg,
+        #ffe3c4,
+        #ffb870
+    );
+
+    border-color: #ff751f;
+}
+
+.why-yellow:hover{
+
+    background: linear-gradient(
+        135deg,
+        #fff9d6,
+        #ffe88a
+    );
+
+    border-color: #f9a920;
+}
+
+.why-red:hover{
+
+    background: linear-gradient(
+        135deg,
+        #ffd7dd,
+        #ff9aa8
+    );
+
+    border-color: var(--primary);
+}
+
+/* Video Comercial */
+
+.video-section{
+
+    padding: 100px 0;
+}
+
+.video-header{
+
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.video-tag{
+
+    display: inline-block;
+
+    padding: 8px 20px;
+
+    background: linear-gradient(
+        135deg,
+        var(--primary),
+        var(--accent-orange)
+    );
+
+    color: white;
+
+    border-radius: 50px;
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+.video-header p{
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    color: var(--text-secondary);
+
+    font-size: 1.1rem;
+}
+
+.video-container{
+
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.video-container:hover{
+
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,.15);
+}
+
+.video-container video{
+
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.video-stats{
+
+    margin-top: 40px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 50px;
+
+    flex-wrap: wrap;
+
+    text-align: center;
+}
+
+.video-stats h3{
+
+    color: var(--primary);
+
+    font-size: 2rem;
+
+    margin-bottom: 5px;
+}
+
+.video-card{
+    background: var(--surface);
+
+    border-radius: 30px;
+
+    padding: 40px;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,.12);
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+@media (max-width: 768px){
+
+    .video-container{
+
+        max-width: 350px;
+    }
+
+    .video-container video{
+
+        aspect-ratio: 9 / 16;
+
+        object-fit: cover;
+    }
+
+}
+
+.stat-card{
+
+    background: white;
+
+    min-width: 180px;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+
+.stat-card:nth-child(1):hover{
+
+    background: linear-gradient(
+        135deg,
+        #ffe3c4,
+        #ffb870
+    );
+
+    transform: translateY(-8px);
+}
+
+.stat-card:nth-child(2):hover{
+
+    background: linear-gradient(
+        135deg,
+        #ffd7dd,
+        #ff9aa8
+    );
+
+    transform: translateY(-8px);
+}
+
+.stat-card:nth-child(3):hover{
+
+    background: linear-gradient(
+        135deg,
+        #fff9d6,
+        #ffe88a
+    );
+
+    transform: translateY(-8px);
+}
+
+/* Gallery */
+.gallery-section{
+    padding: 80px 0;
+}
+
+.gallery-subtitle{
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+}
+
+.gallery-grid{
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 20px;
+}
+
+.gallery-large{
+    grid-row: span 2;
+}
+
+.gallery-wide{
+    grid-column: span 2;
+}
+
+.gallery-item{
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+
+.gallery-item img{
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .4s ease;
+}
+
+
+@media (max-width:768px){
+
+    .gallery-grid{
+
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-large,
+    .gallery-wide{
+
+        grid-row: auto;
+        grid-column: auto;
+    }
+
+}
+
+/* Nuestra Esencia */
+
+.essence-section{
+    padding: 100px 0;
+}
+
+.essence-card{
+
+    background: var(--surface);
+
+    border-radius: 30px;
+
+    padding: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 50px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+
+    transition: .3s ease;
+}
+
+.essence-card:hover{
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,.12);
+}
+
+.essence-brand{
+
+    flex: 1;
+
+    text-align: center;
+
+    font-size: 5rem;
+
+    font-weight: bold;
+
+    position: relative;
+
+    animation: floatLogo 4s ease-in-out infinite;
+}
+
+.spice-sp{
+
+    color: var(--primary);
+
+    transition: .3s;
+}
+
+.spice-ice{
+
+    color: var(--accent-yellow);
+
+    transition: .3s;
+}
+
+.essence-card:hover .spice-sp{
+
+    color: var(--accent-orange);
+}
+
+.essence-card:hover .spice-ice{
+
+    color: var(--accent-amber);
+}
+
+.essence-plus{
+
+    margin: 0 10px;
+
+    color: var(--text-secondary);
+}
+
+.essence-content{
+
+    flex: 2;
+}
+
+.essence-tag{
+
+    display: inline-block;
+
+    padding: 8px 20px;
+
+    border-radius: 50px;
+
+    background: linear-gradient(
+        135deg,
+        var(--primary),
+        var(--accent-orange)
+    );
+
+    color: white;
+
+    margin-bottom: 20px;
+}
+
+.essence-content h2{
+
+    color: var(--primary);
+
+    margin-bottom: 20px;
+}
+
+.essence-content p{
+
+    color: var(--text-secondary);
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+.essence-brand::before{
+
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,117,31,.25),
+            transparent 70%
+        );
+
+    z-index: 0;
+}
+
+.spice-sp,
+.spice-ice,
+.essence-plus{
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes floatLogo{
+
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-8px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .essence-card{
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .essence-brand{
+
+        font-size: 3rem;
+    }
+
+}
+
+/* Contact CTA */
+
+.contact-cta{
+    padding: 100px 0;
+}
+
+.contact-cta-card{
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary),
+            var(--secondary),
+            var(--accent-orange)
+        );
+
+    color: white;
+
+    padding: 70px 50px;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.contact-cta-card::before{
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(255,255,255,.12);
+
+    transition: .8s;
+}
+
+.contact-cta-card:hover::before{
+    left: 100%;
+}
+
+.contact-tag{
+
+    display: inline-block;
+
+    padding: 8px 20px;
+
+    border-radius: 50px;
+
+    background: rgba(255,255,255,.15);
+
+    margin-bottom: 20px;
+
+    font-weight: 600;
+}
+
+.contact-cta-card h2{
+
+    font-size: 2.5rem;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.contact-cta-card p{
+
+    max-width: 700px;
+
+    margin: 0 auto 35px auto;
+
+    line-height: 1.8;
+}
+
+.contact-cta-buttons{
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+@media (max-width:768px){
+
+    .contact-cta-card{
+
+        padding: 50px 25px;
+    }
+
+    .contact-cta-card h2{
+
+        font-size: 1.8rem;
+    }
+
+}

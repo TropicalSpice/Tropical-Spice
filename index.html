@@ -8,9 +8,16 @@
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+
 </head>
 <body>
 
@@ -19,9 +26,9 @@
     <div class="sidebar" id="sidebar">
 
         <div class="sidebar-header">
-
-           <a href="index.html" class="logo">
-                <img src="assets/images/logoTSV1.png" alt="Tropical Spice">
+            
+            <a href="index.html" class="logo">
+                <img src="assets/images/logos/logoTSV1.png" alt="Tropical Spice">
             </a>
 
             <button id="toggleSidebar" class="toggle-btn">
@@ -32,17 +39,17 @@
 
         <nav class="sidebar-nav">
 
-            <a href="#productos">
+            <a href="./productos.html">
                 <img src="assets/icons/logoTSV2.ico" alt="Productos" class="nav-icon">
                 <span class="nav-text">Productos</span>
             </a>
 
-            <a href="#nosotros">
+            <a href="./nosotros.html">
                 <span class="nav-icon">👥</span>
                 <span class="nav-text">Nosotros</span>
             </a>
 
-            <a href="#contacto">
+            <a href="./contactanos.html">
                 <span class="nav-icon">📱</span>
                 <span class="nav-text">Contáctanos</span>
             </a>
@@ -63,24 +70,640 @@
 
                 <source
                     media="(max-width: 768px)"
-                    srcset="./assets/images/banner_mobile.png">
+                    srcset="./assets/images/banner/banner_mobile.png">
 
                 <!-- Imagen escritorio -->
 
                 <img
-                    src="./assets/images/banner_desktop.png"
+                    src="./assets/images/banner/banner_desktop.png"
                     alt="Tropical Spice">
 
             </picture>
 
         </section>
 
+        <!-- Welcome -->
+
+        <section class="welcome-section">
+
+            <div class="welcome-card">
+
+                <div class="welcome-icon">
+                    🌴
+                </div>
+
+                <h2>
+                    Bienvenidos a Tropical Spice
+                </h2>
+
+                <p>
+                    Un lugar donde cada chamoyada está hecha para darle
+                    un toque especial a tu día.
+                </p>
+
+                <a href="#productos" class="btn btn-primary">
+                    Descubre Nuestros Productos
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Carusel -->
+        <section id="productos" class="products-section">
+
+            <div class="container">
+
+                <h2 class="section-title">
+                    Productos Destacados
+                </h2>
+
+                <div class="swiper productsSwiper">
+
+                    <div class="swiper-wrapper">
+
+                        <!-- Producto 1 -->
+                        <div class="swiper-slide">
+                            
+                            <div class="carousel-item active">
+
+                                <div class="card-custom product-card">
+
+                                    <img src="assets/images/productos/fresa.jpeg"
+                                        alt="Fresa">
+
+                                    <h3>Chamoyada De Fresa</h3>
+
+                                    <p>
+                                        Refrescante Chamoyada De Fresa con sabor auténtico.
+                                    </p>
+
+                                    <a href="./productos.html"
+                                    class="btn btn-primary">
+
+                                        Ver más
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Producto 2 -->
+                        <div class="swiper-slide">
+                            
+                            <div class="carousel-item active">
+
+                                <div class="card-custom product-card">
+
+                                    <img src="assets/images/productos/lemon_pepino.jpeg"
+                                        alt="Fresa">
+
+                                    <h3>Chamoyada De Pepino/Limón</h3>
+
+                                    <p>
+                                        Refrescante Chamoyada De Pepino/Limón con sabor auténtico.
+                                    </p>
+
+                                    <a href="./productos.html"
+                                    class="btn btn-primary">
+
+                                        Ver más
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Producto 3 -->
+                        <div class="swiper-slide">
+                            
+                            <div class="carousel-item active">
+
+                                <div class="card-custom product-card">
+
+                                    <img src="assets/images/productos/mango.jpeg"
+                                        alt="Fresa">
+
+                                    <h3>Chamoyada de Mango</h3>
+
+                                    <p>
+                                        Refrescante Chamoyada de Mango con sabor auténtico.
+                                    </p>
+
+                                    <a href="./productos.html"
+                                    class="btn btn-primary">
+
+                                        Ver más
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Producto 4 -->
+                        <div class="swiper-slide">
+                            
+                            <div class="carousel-item active">
+
+                                <div class="card-custom product-card">
+
+                                    <img src="assets/images/productos/piña.jpeg"
+                                        alt="Fresa">
+
+                                    <h3>Chamoyada De Piña</h3>
+
+                                    <p>
+                                        Refrescante Chamoyada De Piña con sabor auténtico.
+                                    </p>
+
+                                    <a href="./productos.html"
+                                    class="btn btn-primary">
+
+                                        Ver más
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Producto 5 -->
+                        <div class="swiper-slide">
+                            
+                            <div class="carousel-item active">
+
+                                <div class="card-custom product-card">
+
+                                    <img src="assets/images/productos/sandia.jpeg"
+                                        alt="Fresa">
+
+                                    <h3>Chamoyada de Sandía</h3>
+
+                                    <p>
+                                        Refrescante Chamoyada de Sandía con sabor auténtico.
+                                    </p>
+
+                                    <a href="./productos.html"
+                                    class="btn btn-primary">
+
+                                        Ver más
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Producto 6 -->
+                        <div class="swiper-slide">
+                            
+                            <div class="carousel-item active">
+
+                                <div class="card-custom product-card">
+
+                                    <img src="assets/images/productos/dori_locos.jpeg"
+                                        alt="Fresa">
+
+                                    <h3>Dorilocos</h3>
+
+                                    <p>
+                                        Deliciosos Dorilocos con sabor auténtico.
+                                    </p>
+
+                                    <a href="./productos.html"
+                                    class="btn btn-primary">
+
+                                        Ver más
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Producto 7 -->
+                        <div class="swiper-slide">
+                            
+                            <div class="carousel-item active">
+
+                                <div class="card-custom product-card">
+
+                                    <img src="assets/images/productos/tosti_locos.jpeg"
+                                        alt="Fresa">
+
+                                    <h3>Tostilocos</h3>
+
+                                    <p>
+                                        Deliciosos Tostilocos con sabor auténtico.
+                                    </p>
+
+                                    <a href="./productos.html"
+                                    class="btn btn-primary">
+
+                                        Ver más
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Why Section -->
+
+        <section id="porque" class="why-section">
+
+            <div class="container">
+
+                <h2 class="section-title">
+                    ¿Por qué Tropical Spice?
+                </h2>
+
+                <div class="row g-4">
+
+                    <div class="col-md-6 col-lg-3">
+
+                        <div class="card-custom why-card why-green">
+
+                            <div class="why-icon">
+                                🌴
+                            </div>
+
+                            <h4>Sabor Auténtico</h4>
+
+                            <p>
+                                Recetas cuidadosamente elaboradas para ofrecer una experiencia única.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+
+                        <div class="card-custom why-card why-orange">
+
+                            <div class="why-icon">
+                                🥭
+                            </div>
+
+                            <h4>Ingredientes de Calidad</h4>
+
+                            <p>
+                                Seleccionamos ingredientes que garantizan frescura y excelente sabor.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+
+                        <div class="card-custom why-card why-yellow">
+
+                            <div class="why-icon">
+                                ⭐
+                            </div>
+
+                            <h4>Variedad de Sabores</h4>
+
+                            <p>
+                                Opciones para todos los gustos.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+
+                        <div class="card-custom why-card why-red">
+
+                            <div class="why-icon">
+                                ❤️
+                            </div>
+
+                            <h4>Hecho con Pasión</h4>
+
+                            <p>
+                                Cada chamoyada está pensada para brindar momentos memorables.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Video -->
+
+        <section id="video" class="video-section">
+
+            <div class="container">
+
+                <div class="video-header">
+
+                    <span class="video-tag">
+                        🌴 Tropical Spice
+                    </span>
+
+                    <h2 class="section-title">
+                        Conoce la Experiencia
+                    </h2>
+
+                    <p>
+                        Descubre los sabores, colores y momentos que hacen especial cada chamoyada.
+                    </p>
+
+                </div>
+
+                <div class="video-container">
+
+                    <video controls preload="metadata">
+
+                        <source
+                            src="assets/videos/comercial.mp4"
+                            type="video/mp4">
+
+                        Tu navegador no soporta video HTML5.
+
+                    </video>
+
+                </div>
+
+                <div class="video-stats">
+
+                    <div class="stat-card">
+                        <h3>7+</h3>
+                        <p>Sabores</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3>100%</h3>
+                        <p>Pasión</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3>∞</h3>
+                        <p>Momentos Especiales</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Gallery -->
+        <section id="galeria" class="gallery-section">
+
+            <div class="container">
+
+                <h2 class="section-title">
+                    Nuestra Galería
+                </h2>
+
+                <p class="gallery-subtitle">
+                    Algunos momentos que hacen especial la experiencia Tropical Spice.
+                </p>
+
+                <div class="gallery-grid">
+
+                    <div class="gallery-item gallery-large">
+                        <img src="assets/images/galeria/bebidas.jpeg" alt="">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/images/galeria/combo1.jpeg" alt="">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/images/galeria/tosti_fondo.jpeg" alt="">
+                    </div>
+
+                    <div class="gallery-item gallery-wide">
+                        <img src="assets/images/galeria/combo2.jpeg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Nuestra Esencia -->
+
+        <section id="esencia" class="essence-section">
+
+            <div class="container">
+
+                <div class="essence-card">
+
+                    <div class="essence-brand">
+
+                        <span class="spice-sp">SP</span>
+
+                        <span class="essence-plus">+</span>
+
+                        <span class="spice-ice">ICE</span>
+
+                    </div>
+
+                    <div class="essence-content">
+
+                        <span class="essence-tag">
+                            🌴 Nuestra Esencia
+                        </span>
+
+                        <h2>
+                            El origen de Tropical Spice
+                        </h2>
+
+                        <p>
+                            Tropical Spice nace de la idea de combinar dos experiencias únicas:
+                            la frescura del hielo y la intensidad de un toque picosito.
+                            Cada chamoyada está pensada para transformar un momento cotidiano
+                            en una experiencia tropical llena de sabor.
+                        </p>
+
+                        <a href="nosotros.html"
+                        class="btn btn-primary">
+                            Conocer Más
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Contact CTA -->
+
+        <section class="contact-cta">
+
+            <div class="container">
+
+                <div class="contact-cta-card">
+
+                    <span class="contact-tag">
+                        🌴 Tropical Spice
+                    </span>
+
+                    <h2>
+                        ¿Listo para probar algo diferente?
+                    </h2>
+
+                    <p>
+                        Descubre nuestras chamoyadas, snacks y sabores tropicales.
+                        Síguenos en Instagram o ponte en contacto con nosotros para
+                        conocer más sobre nuestros productos.
+                    </p>
+
+                    <div class="contact-cta-buttons">
+
+                        <a
+                            href="https://www.instagram.com/tropical_spice_by"
+                            target="_blank"
+                            class="btn btn-primary">
+
+                            Instagram
+
+                        </a>
+
+                        <a
+                            href="./contactanos.html"
+                            class="btn btn-secondary">
+
+                            Contáctanos
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+
+        <footer class="footer">
+
+            <div class="container">
+
+                <div class="footer-content">
+
+                    <div class="footer-brand">
+
+                        <img
+                            src="assets/images/logos/logoTSV1.png"
+                            alt="Tropical Spice">
+
+                        <p>
+                            Refrescando momentos con un toque tropical y picosito.
+                        </p>
+
+                    </div>
+
+                    <div class="footer-links">
+
+                        <h5>
+                            Navegación
+                        </h5>
+
+                        <a href="./index.html">
+                            Inicio
+                        </a>
+
+                        <a href="./productos.html">
+                            Productos
+                        </a>
+
+                        <a href="./nosotros.html">
+                            Nosotros
+                        </a>
+
+                        <a href="./contactanos.html">
+                            Contáctanos
+                        </a>
+
+                    </div>
+
+                    <div class="footer-contact">
+
+                        <h5>
+                            Contacto
+                        </h5>
+
+                        <a href="https://www.instagram.com/tropical_spice_by" target="_blank">
+                            <i class="bi bi-instagram"></i>
+                            @tropical_spice_by
+                        </a>
+
+                        <a href="mailto:tropicalspicee@gmail.com">
+                            <i class="bi bi-envelope-fill"></i>
+                            tropicalspicee@gmail.com
+                        </a>
+
+                        <span>
+                            📱 WhatsApp próximamente
+                        </span>
+                        <!--
+                        <a href="https://wa.me/525512345678?text=Hola,%20me%20gustaría%20obtener%20información%20sobre%20Tropical%20Spice"target="_blank">
+                            <i class="bi bi-whatsapp"></i>
+                            WhatsApp
+                        </a>
+                        -->
+
+                    </div>
+
+                </div>
+
+                <div class="footer-bottom">
+
+                    <p>
+                        © 2026 Tropical Spice. Todos los derechos reservados.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </footer>
 
     </main>
 
     <!-- Scripts -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>

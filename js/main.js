@@ -2,13 +2,30 @@ const sidebar = document.getElementById("sidebar");
 const main = document.getElementById("main-content");
 const toggleBtn = document.getElementById("toggleSidebar");
 
+if(window.innerWidth <= 768){
+
+    sidebar.classList.add("collapsed");
+
+    main.classList.add("expanded");
+
+}
+
 toggleBtn.addEventListener("click", () => {
 
-    sidebar.classList.toggle("collapsed");
+    if(window.innerWidth <= 768){
 
-    main.classList.toggle("expanded");
+        sidebar.classList.toggle("open");
+
+    }else{
+
+        sidebar.classList.toggle("collapsed");
+
+        main.classList.toggle("expanded");
+
+    }
 
 });
+
 
 new Swiper(".productsSwiper", {
 

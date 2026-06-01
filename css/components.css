@@ -294,4 +294,31 @@ main.expanded{
         display: block;
     }
 
+    .sidebar{
+
+        transform: translateX(-100%);
+
+        width: 260px;
+    }
+
+    .sidebar.open{
+
+        transform: translateX(0);
+    }
+
+    main{
+
+        margin-left: 0;
+    }
+    
+    .sidebar-nav a{
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        gap: 8px;
+
+        text-align: center;
+    }
 }

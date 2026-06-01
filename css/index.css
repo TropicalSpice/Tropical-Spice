@@ -360,7 +360,7 @@
     margin: 0 auto;
 }
 
-@media (max-width: 768px){
+@media (max-width: 576px){
 
     .video-container{
 
@@ -475,7 +475,7 @@
 }
 
 
-@media (max-width:768px){
+@media (max-width:576px){
 
     .gallery-grid{
 
@@ -656,7 +656,7 @@
 
 }
 
-@media (max-width: 768px){
+@media (max-width: 576px){
 
     .essence-card{
 
@@ -766,7 +766,7 @@
     flex-wrap: wrap;
 }
 
-@media (max-width:768px){
+@media (max-width:576px){
 
     .contact-cta-card{
 

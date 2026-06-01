@@ -2,7 +2,7 @@ const sidebar = document.getElementById("sidebar");
 const main = document.getElementById("main-content");
 const toggleBtn = document.getElementById("toggleSidebar");
 
-if(window.innerWidth <= 768){
+if(window.innerWidth <= 576){
 
     sidebar.classList.add("collapsed");
 
@@ -12,7 +12,7 @@ if(window.innerWidth <= 768){
 
 toggleBtn.addEventListener("click", () => {
 
-    if(window.innerWidth <= 768){
+    if(window.matchMedia("(max-width:576px)").matches){
 
         sidebar.classList.toggle("open");
 
@@ -48,7 +48,7 @@ new Swiper(".productsSwiper", {
             slidesPerView: 1
         },
 
-        768: {
+        576: {
             slidesPerView: 2
         },
 

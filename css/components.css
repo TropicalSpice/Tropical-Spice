@@ -273,7 +273,7 @@ main.expanded{
     color: rgba(255,255,255,.75);
 }
 
-@media (max-width:768px){
+@media (max-width:576px){
 
     .footer-content{
 
@@ -296,7 +296,7 @@ main.expanded{
 
     .sidebar{
 
-        transform: translateX(-100%);
+        /*transform: translateX(-100%);*/
 
         width: 260px;
     }
